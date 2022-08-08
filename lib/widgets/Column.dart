@@ -8,20 +8,22 @@ import 'small_text.dart';
 
 class AppColumn extends StatelessWidget {
   final String text;
-  const AppColumn({Key? key, required this.text}) : super(key: key);
+  TextOverflow overFlow;
+
+  AppColumn({
+    Key? key,
+    required this.text,
+    this.overFlow = TextOverflow.ellipsis,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            BigText(
-              text: text,
-              size: Dimensions.font26,
-            )
-          ],
+        BigText(
+          text: text,
+          size: Dimensions.font26,
         ),
         SizedBox(height: Dimensions.height10),
         Row(

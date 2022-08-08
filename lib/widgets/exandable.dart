@@ -42,7 +42,7 @@ class _ExandableTextWidgetState extends State<ExandableTextWidget> {
           ? SmallText(
               size: Dimensions.font16,
               color: AppColors.paraColor,
-              text: secondHalf)
+              text: firstHalf)
           : Column(
               children: [
                 SmallText(
