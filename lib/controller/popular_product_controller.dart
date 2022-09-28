@@ -88,12 +88,7 @@ class PopularProductController extends GetxController {
     _quantity = 0;
     _inCartItem = _cart.GetQuantity(product);
 
-    _cart.items.forEach((key, value) {
-      print("The id is " +
-          value.id.toString() +
-          " the quantity is" +
-          value.quantity.toString());
-    });
+    _cart.items.forEach((key, value) {});
 
     update();
   }
