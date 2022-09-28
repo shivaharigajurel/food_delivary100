@@ -40,6 +40,7 @@ class CartModel {
       "quantity": this.quantity,
       "isExit": this.isExist,
       "time": this.time,
+      "product": this.product!.tojson(),
     };
   }
 }
