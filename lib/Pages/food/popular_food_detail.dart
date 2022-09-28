@@ -226,7 +226,7 @@ class PopularFoodDetail extends StatelessWidget {
                         ),
                         child: Row(
                           children: [
-                            BigText(text: "\$ ${product.price} Add To Card"),
+                            BigText(text: "\$ ${product.price!} Add To Card"),
                           ],
                         ),
                       ),
