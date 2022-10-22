@@ -27,7 +27,7 @@ class CartPage extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              IconWidget(
+              AppIcon(
                 icon: Icons.arrow_back_ios,
                 iconColor: Colors.white,
                 backgroundColor: AppColors.mainColor,
@@ -40,14 +40,14 @@ class CartPage extends StatelessWidget {
                 onTap: () {
                   Get.toNamed(RouteHelper.getInitial());
                 },
-                child: IconWidget(
+                child: AppIcon(
                   icon: Icons.home_outlined,
                   iconColor: Colors.white,
                   backgroundColor: AppColors.mainColor,
                   size: Dimensions.font26 * 1.5,
                 ),
               ),
-              IconWidget(
+              AppIcon(
                 icon: Icons.shopping_cart,
                 iconColor: Colors.white,
                 backgroundColor: AppColors.mainColor,

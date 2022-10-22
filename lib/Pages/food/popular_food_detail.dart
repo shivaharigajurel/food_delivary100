@@ -64,7 +64,7 @@ class PopularFoodDetail extends StatelessWidget {
                         Get.toNamed(RouteHelper.getInitial());
                       }
                     },
-                    child: IconWidget(
+                    child: AppIcon(
                       icon: Icons.arrow_back_ios,
                     ),
                   ),
@@ -76,12 +76,12 @@ class PopularFoodDetail extends StatelessWidget {
                       },
                       child: Stack(
                         children: [
-                          IconWidget(icon: Icons.shopping_cart_outlined),
+                          AppIcon(icon: Icons.shopping_cart_outlined),
                           controller.totalItems >= 1
                               ? Positioned(
                                   right: 0,
                                   top: 0,
-                                  child: IconWidget(
+                                  child: AppIcon(
                                     icon: Icons.circle,
                                     size: 20,
                                     iconColor: Colors.transparent,

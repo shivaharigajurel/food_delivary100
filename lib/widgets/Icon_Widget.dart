@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivary/utilts/dimensions.dart';
 
-class IconWidget extends StatelessWidget {
+class AppIcon extends StatelessWidget {
   final IconData icon;
   final Color backgroundColor;
   final Color iconColor;
   final double size;
-  const IconWidget({
+  const AppIcon({
     Key? key,
     required this.icon,
     this.backgroundColor = const Color(0xFFccc7c5),

@@ -50,7 +50,7 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
                         Get.toNamed(RouteHelper.getInitial());
                       }
                     },
-                    child: IconWidget(icon: Icons.clear),
+                    child: AppIcon(icon: Icons.clear),
                   ),
                   // IconWidget(icon: Icons.shopping_cart),
                   GetBuilder<PopularProductController>(builder: (controller) {
@@ -61,12 +61,12 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
                       },
                       child: Stack(
                         children: [
-                          IconWidget(icon: Icons.shopping_cart_outlined),
+                          AppIcon(icon: Icons.shopping_cart_outlined),
                           controller.totalItems >= 1
                               ? Positioned(
                                   right: 0,
                                   top: 0,
-                                  child: IconWidget(
+                                  child: AppIcon(
                                     icon: Icons.circle,
                                     size: 20,
                                     iconColor: Colors.transparent,
@@ -161,7 +161,7 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
                       onTap: () {
                         popularProduct.setQuantaty(false);
                       },
-                      child: IconWidget(
+                      child: AppIcon(
                           size: Dimensions.height45,
                           iconColor: Colors.white,
                           backgroundColor: AppColors.mainColor,
@@ -177,7 +177,7 @@ class _RecommendedFoodDetailState extends State<RecommendedFoodDetail> {
                       onTap: () {
                         popularProduct.setQuantaty(true);
                       },
-                      child: IconWidget(
+                      child: AppIcon(
                           size: Dimensions.height45,
                           iconColor: Colors.white,
                           backgroundColor: AppColors.mainColor,
